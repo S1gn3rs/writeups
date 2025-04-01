@@ -11,6 +11,21 @@
 - **Description:** My friends gave me some advice to fix my code because apparently there were "glaring security flaws". Not sure what they meant, but now my code is more secure than ever!
 - **Author:** FlamePyromancer
 
+
+
+## Required Knowledge and Knowledge Learned
+
+**Required Knowledge:**
+- **C Programming:** Know C syntax, functions, and the standard library.
+- **Binary Exploitation:** Understand buffer overflows, stack frames, and memory layout.
+
+**Knowledge Learned:**
+- **Binary Analysis:** Identify security features and vulnerabilities.
+- **Stack Pivoting:** Redirect the stack pointer (rsp) to a controlled region.
+- **ROP Chain Construction:** Build ROP chains to leak addresses and execute payloads.
+- **one_gadget and ropper Usage:** Tools that assist in our exploite.
+---
+
 ### Binary Security Features
 When analyzing a C binary, the first step is to check its permissions.
 
