@@ -1,8 +1,9 @@
-# TEMU 2025 - 🩸debug2 Writeup <- FIRST BLOOD🩸
-**Author:** s1gn3rs
-**Team:** STT
-**Date:** March 28, 2025
-**github:** 
+# TEMU 2025 - debug2 Writeup 🩸FIRST BLOOD🩸
+- **Author:** s1gn3rs
+- **Team:** STT
+- **Date:** March 28, 2025
+- **github:** https://github.com/S1gn3rs/writeups/tree/b119e9c9ba74eb7833b181b2352a2d7a90b6679e/2025_03_28_TAMUctf25/debug2
+
 ## Challenge Information
 
 - **Category:** PWN
