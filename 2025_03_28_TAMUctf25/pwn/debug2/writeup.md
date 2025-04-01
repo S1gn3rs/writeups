@@ -2,7 +2,7 @@
 - **Author:** s1gn3rs
 - **Team:** STT
 - **Date:** March 28, 2025
-- **github:** https://github.com/S1gn3rs/writeups/tree/b119e9c9ba74eb7833b181b2352a2d7a90b6679e/2025_03_28_TAMUctf25/debug2
+- **github:** https://github.com/S1gn3rs/writeups/tree/502e91172c163ca588e4814cd8cc4a0525548bf7/2025_03_28_TAMUctf25/pwn/debug2
 
 ## Challenge Information
 
