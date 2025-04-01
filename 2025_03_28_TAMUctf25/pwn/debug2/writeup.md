@@ -47,7 +47,7 @@ And the output should be:
 ### Key Observations
 
 - **Full RELRO** GOT entries cannot be overwritten.
-- **PIE Enabled:** ASLR is active, so a memory leak is required to obtain correct addresses.
+- **PIE Enabled:** so a memory leak is required to obtain correct addresses.
 - **No Canary:** The stack can be directly overwritten.
 - **NX Enabled:** Execution of shellcode on the stack is prevented.
 ---
@@ -251,10 +251,10 @@ At this point, I considered what resources are available. I can change the RIP t
 
 Although we do not have a direct leak of the stack (which is where our input is written), the binary leak enables us to access another section called the BSS, which holds uninitialized variables. Since the BSS is writable, if we can somehow redirect the input location from the stack to the BSS, we can gain additional information, namely the location of our input.
 
-This is where stack pivoting comes into play.Essentially, `stack pivoting` is a technique that involves redirecting the stack pointer (`rsp`) to a different, attacker controlled area of memory in this case, the BSS section. Normally, `rsp` points to the current stack frame where our overflowed input is stored, but by changing `rsp` to point to a writable region like the BSS, we effectively "move" the stack. This allows us to set up and in the end execute a controlled payload from that new location  (such as a ROP chain).
+This is where stack pivoting comes into play. Essentially, `stack pivoting` is a technique that involves redirecting the stack pointer (`rsp`) to a different, attacker controlled area of memory in this case, the BSS section. Normally, `rsp` points to the current stack frame where our overflowed input is stored, but by changing `rsp` to point to a writable region like the BSS, we effectively "move" the stack. This allows us to set up and in the end execute a controlled payload from that new location  (such as a ROP chain).
 
 
-So in order to do that in the saved RBP we need to put an address of the bss and change is return address. So our second payload should look like this, where `BSS_ADDRESS` and `CODE_ADDRESS` are defined beforehand:
+So in order to do that in the saved RBP we need to put an address of the bss and change the return address. So our second payload should look like this, where `BSS_ADDRESS` and `CODE_ADDRESS` are defined beforehand:
 
 ```python
     payload = b"A"*(offsetRip - 8)
