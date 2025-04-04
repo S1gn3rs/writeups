@@ -1,3 +1,0 @@
-zip2john flag.zip > johnZip
- john --wordlist=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt johnZip
-john --show johnZip
