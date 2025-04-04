@@ -1,1 +1,0 @@
-flag{stt_passw0rd_cracking_is_easy}
