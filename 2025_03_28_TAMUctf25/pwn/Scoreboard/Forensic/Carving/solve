@@ -1,4 +1,0 @@
-binwalk nothing_hidden_here.png 
-foremost nothing_hidden_here.png
-
-chafa 00001650.png  # To see the image but we cant see it well so try to open it in the file system
