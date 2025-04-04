@@ -1,0 +1,3 @@
+pdf2john secret.pdf > johnSecret
+john --wordlist=/usr/share/wordlists/rockyou.txt johnSecret
+
