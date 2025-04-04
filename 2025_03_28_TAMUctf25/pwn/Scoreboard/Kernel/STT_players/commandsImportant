@@ -1,0 +1,12 @@
+mkdir rootfs
+cd rootfs
+cpio -idmv < ../rootfs.cpio
+find . -name "*.ko"
+
+
+wget https://raw.githubusercontent.com/torvalds/linux/master/scripts/extract-vmlinux
+chmod +x extract-vmlinux
+./extract-vmlinux bzImage > vmlinux
+strings vmlinux | grep "\.ko"
+objcopy -O binary --only-section=.init.text vmlinux init_section.bin
+
