@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Feb 21 20:59:22 2025
+Invocation: foremost nothing_hidden_here.png 
+Output directory: /home/s1gn3rs/Documents/stt/Scoreboard/Forensic/Carving/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: nothing_hidden_here.png
+Start: Fri Feb 21 20:59:22 2025
+Length: 829 KB (849668 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     825 KB 	          0 	  (700 x 700)
+1:	00001650.png 	       4 KB 	     845044 	  (1152 x 648)
+Finish: Fri Feb 21 20:59:22 2025
+
+2 FILES EXTRACTED
+	
+png:= 2
+------------------------------------------------------------------
+
+Foremost finished at Fri Feb 21 20:59:22 2025
